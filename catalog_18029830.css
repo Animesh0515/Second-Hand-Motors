@@ -1,0 +1,218 @@
+/*Giving background image to whole page*/
+shop {background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(car.jpg);
+	height: 100%;
+	background-size: cover;
+    background-position: center;
+    }
+
+/*Desging the head  part which contains the shop details*/
+head{display:block; 
+    width: 1000px;
+    height: 100px;
+    padding: 10px;
+    font-size: 10pt; 
+    border: 2px solid white;
+    margin-bottom: 30px;
+    margin-left:450px ;
+    background-color: whitesmoke;
+    }
+
+/*Inserting company logo and desgining it*/
+logo{background-image: url("logo.jpg");
+    background-size: cover;
+     height: 100px;
+    width: 200px;
+    margin-top:0px;
+    margin-bottom: 5px;
+    margin-left:15px;
+    margin-right: 20px;
+    border: 2px solid black;
+    float: left;
+    }
+
+/*Desgining the name of the shop*/
+ name{display: block;
+         font-family: Algerian;
+        color: red; 
+        font-size: 50px; 
+        margin-left: 300px; 
+        text-shadow: 2px 2px 4px black; 
+        }
+
+/*Adjusting the font and the position of shop details to display them in proper order*/    
+address, telephone, Website{font-size:15px;
+                            margin-left: 50px;
+                            color: red;}
+
+/*Designing the body part which contains the information of cars */
+body{display:block; 
+    width: 1000px; 
+    color: white; 
+    height: 3200px;  
+    padding: 10px; 
+    font-family: Century Gothic;
+    font-size: 13px; 
+    border: 2px solid white; 
+    margin-bottom: 30px; 
+    margin-left:450px ; 
+    background-color: black;
+    }
+
+/*Desgining and positioning the data of h2 element*/
+h2{display: block; 
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    }
+
+/*Positioning the data of intro element*/
+intro{margin-left: 2px;}
+
+/*Desiging and display the information of each vehicle Separately*/
+vehicle{display:block; 
+    width: 900px; 
+    height: 370px; 
+    padding: 10px; 
+    font-size: 10pt; 
+    border: 2px solid white; 
+    margin-top: 30px; 
+    margin-left:40px ;
+    }
+
+/*Adjusting font of the data present in item_number element*/
+item_number{ font-size: 15px;}
+
+/*Adding picture of the car*/
+[picture="Toyota"]{  background-image: url("Toyota.jpg");
+                    background-size: contain;
+                    height: 150px;
+                    width: 300px;
+                    margin-top:110px;
+                    margin-bottom: 5px;
+                    margin-left:15px;
+                    margin-right: 20px;
+                    float: left;
+                    }
+
+/*Adusting and positioning the data of brand element*/
+brand{ font-size: 20px;
+       margin-left: 250px;
+       }
+
+/*Desgining, adjusting and positioning the data of model element*/
+model{display: block;
+      margin-top: 3px;
+      font-size: 15px;
+      }
+
+/*Desgining and positioning the data of car to display them in proper order*/
+exterior_color, interior_color,manufacture_year, mileage, fuel_capacity, Km, gears, dimension, car_type, hp, transmission, packages, max_seating, quantity, warranty, details, battery_capacity
+            {display: block;
+            margin-left: 350px;}
+            
+/*Adjusting font and positioning data of element price*/         
+price{font-size: 15px;
+      margin-left: 15px;
+      }
+
+/*Adjusting height of block design*/
+[type="Sedan"]{height: 420px;
+              }
+              
+/*Adding picture of car*/
+[picture="Hyundai"]{  background-image: url("Hyundai.jpg");
+    background-size: contain;
+    height: 140px;
+    width: 300px;
+    margin-top:140px;
+    margin-bottom: 5px;
+    margin-left:15px;
+    margin-right: 20px;
+    float: left;
+    }
+
+/*Positioning data of price element having id="P001"*/
+[p_id="P001"]{margin-left: 350px;}
+
+/*Adding picture of car*/
+[picture="Kona"]{  background-image: url("Kona.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 300px;
+    margin-top:100px;
+    margin-bottom: 5px;
+    margin-left:15px;
+    margin-right: 20px;
+    float: left;
+    }
+
+/*Adjusting height of block design*/
+[type="Sports Car"]{height: 390px;}
+
+/*Adding picture of car*/
+[picture="Mustang"]{  background-image: url("Mustang.jpg");
+        background-size: cover;
+        height: 150px;
+        width: 300px;
+        margin-top:110px;
+        margin-bottom: 5px;
+        margin-left:15px;
+        margin-right: 20px;
+        float: left;
+        }
+
+/*Adjusting height of block design*/
+[type="Crossover"]{height: 410px;}
+
+/*Adding picture of car*/
+[picture="Mercedes"]{  background-image: url("Mercedes.jpg");
+    background-size: cover;
+    height: 140px;
+    width: 300px;
+    margin-top:140px;
+    margin-bottom: 5px;
+    margin-left:15px;
+    margin-right: 20px;
+    float: left;
+    }
+
+/*Positioining the data of brand element having id="MG5"*/
+[B_id="MG5"]{ margin-left: 200px;}
+
+
+/*Adjusting height of block design*/
+[type="Coupe"]{height: 390px;}
+
+/*Adding picture of car*/
+[picture="BMW"]{  background-image: url("BMW.jpg");
+    background-size: cover;
+    height: 180px;
+    width: 300px;
+    margin-top:100px;
+    margin-bottom: 5px;
+    margin-left:15px;
+    margin-right: 20px;
+    float: left;
+    }
+
+/*Adding picture of car*/
+[picture="Audi"]{  background-image: url("Audi.jpg");
+    background-size: cover;
+    height: 180px;
+    width: 300px;
+    margin-top:100px;
+    margin-bottom: 5px;
+    margin-left:15px;
+    margin-right: 20px;
+    float: left;
+    }
+
+/*Desgining the footer which is at the end of the page and also contains some information about shop*/
+footer{display: block;
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      height:80px ;}
+/*Designing and positioning the data of child elements of footer to show them in proper order*/
+author, patent, Location, Phone_Number{display: block;
+              text-align: center;}
+

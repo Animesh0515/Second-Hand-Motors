@@ -1,0 +1,229 @@
+<?xml version= "1.0"?>
+<!--Author: Animesh Gautam-->
+<!--Giving locayion of CSS file-->
+<?xml-stylesheet type="text/css" href="catalog_18029830.css"?>
+<!--Declearing root eleement anf giving location of schema document-->
+<shop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_18029830.xsd">
+<!--Declaring head element and its child element where the information of shop is kept-->
+<head>
+    <logo></logo>
+    <name>Second Hand Motors</name>
+    <address>Location: Sorhakhuutya</address>
+    <telephone>Telephone Number: 01-45414741</telephone>
+    <Website>Website: www.secondhandmotors.com</Website>
+</head>
+<!--Declaring body element and its child element which contains the information of cars and further more-->
+<body>
+    <h2>Welcome to Second Hand Motors</h2>
+    <intro>
+    <![CDATA[
+    Hello and welcome to Second Hand Motor, that provides the best deals in buying, selling re-conditioned vehicles with true valuation and on the spot exchange facility along with amiable after sales support. 
+    Feel free to visit our showroom and give us chance to provide you with wide ranges of our services.
+    ]]>
+    </intro>
+<!--Declearing vechicle element and its child elements which stores the data of the car along with attributes and elements that are optional-->
+<vehicle type="Hatchback">
+    <item_number id="C001">01</item_number>
+    <img picture="Toyota"/>
+    <brand B_id="HT5">Toyota</brand>
+    <model m_no="PPX20">Model: Prius Prime XLE</model>
+    <exterior_color>Exterior Color: 
+            <ul>
+                <li>Blue Magnetism</li>
+                <li>Red</li>
+                <li>Black</li>
+            </ul>
+    </exterior_color>
+    <interior_color>Interior Color: Brown</interior_color>
+    <manufacture_year>Manufacture Year: 2020</manufacture_year>
+    <mileage>Mileage: 54 MPG</mileage>
+    <fuel_capacity>Fuel Capacity: 11.3 gallons</fuel_capacity>
+    <Km>KM Covered: 5000</Km>
+    <gears>Gears: 6</gears>
+    <dimension>Dimension: 4530/1700/1350 mm</dimension>
+    <car_type>Car Type: Fuel</car_type>
+    <hp>Horsepower: 121 @ 5200 RPM</hp>
+    <transmission>Transmission: Automatic, ECVT</transmission>
+    <packages>Packages: Paint Protection, Floor Liner</packages>
+    <max_seating>Max Seating: 5</max_seating>
+    <quantity>Quantity:<value>2</value></quantity>
+    <price p_id="P001">Price: 50 Lakh</price>
+    <warranty>Warranty: 3 years</warranty>
+    <details>
+     <![CDATA[
+     Description: A world-class plug-in hybrid, the 2020 Toyota Prius Prime promises a modern style and an ultra-efficient powertrain that is made even more exciting with vibrant exterior colors.
+     ]]>
+     </details>
+</vehicle>
+
+<vehicle type="Sedan">
+    <item_number id="C002">02</item_number>
+    <img picture="Hyundai" />
+    <brand B_id="SH1"> Hyundai</brand>
+    <model m_no="VS1.5">Model: Verna S 1.5 VTVT</model>
+    <exterior_color>Exterior Color: Phantom Black</exterior_color>
+    <interior_color>Interior Color: Black</interior_color>
+    <manufacture_year>Manufacture Year: 2019</manufacture_year>
+    <mileage>Mileage: 57 MPG</mileage>
+    <fuel_capacity>Fuel Capacity: 45 liters</fuel_capacity>
+    <Km>KM Covered: 10000</Km>
+    <gears>Gears: 6</gears>
+    <dimension>Dimension: 4440/1729/1470 mm</dimension>
+    <car_type>Car Type: Hybrid</car_type>
+    <hp>Horsepower: 113 @ 6300 RPM</hp>
+    <transmission>Transmission: Manual, Automatic, ECVT</transmission>
+    <packages>Packages: Paint Protection</packages>
+    <max_seating>Max Seating: 5</max_seating>
+    <quantity>Quantity:<value>1</value></quantity>
+    <price>Price: 9.31 Lakh</price>
+    <warranty>Warranty: 3 years</warranty>
+    <details>
+    <![CDATA[
+    Description: The Avg. Ex-Showroom price of Verna S 1.5 VTVT is ₹ 9.31L.The Diesel Manual variants are S Plus 1.5 CRDi, SX 1.5 CRDi and SX (O) 1.5 CRDi. The Petrol Manual variants are SX 1.5 VTVT and SX (O)1.5 VTVT. The Petrol Automatic (CVT) variants are SX 1.5 VTVT IVT and SX (O) 1.5 VTVT IVT. The Diesel Automatic variants are SX 1.5 CRDi AT and SX (O) 1.5 CRDi AT. The Petrol Automatic variants are SX (O) 1.0 Turbo DCT.
+    ]]>
+    </details>
+</vehicle>
+
+<vehicle type="SUV">
+    <item_number id="C003">03</item_number>
+    <img picture="Kona" />
+    <brand B_id="HK20"> Hyundai</brand>
+    <model m_no="KE2">Model: Kona Electric</model>
+    <exterior_color>Exterior Color: White</exterior_color>
+    <interior_color>Interior Color: Premium Black</interior_color>
+    <manufacture_year>Manufacture Year: 2020</manufacture_year>
+    <battery_capacity>Battery Capacity: 39.2kWh</battery_capacity>
+    <Km>KM Covered: 2000</Km>
+    <dimension>Dimension: 4180/1800/1570 mm</dimension>
+    <car_type>Car Type: Electric</car_type>
+    <hp>Horsepower: 134.1bhp</hp>
+    <transmission>Transmission: Automatic</transmission>
+    <packages>Packages: Paint Protection, Floor Liner</packages>
+    <max_seating>Max Seating: 5</max_seating>
+    <quantity>Quantity:<value>5</value></quantity>
+    <price>Price: 23.9 Lakh</price>
+    <warranty>Warranty: 3 years</warranty>
+    <details>
+      <![CDATA[
+      The Hyundai Kona Electric has 1 Electric Engine on offer. It is available with the Automatic transmission. The Kona Electric is a 5 seater SUV and has a length of 4180, width of 1800 and a wheelbase of 2600.
+      ]]>
+      </details>
+    </vehicle>
+
+<vehicle type="Sports Car">
+<item_number id="C004">04</item_number>
+<img picture="Mustang"/>
+<brand B_id="FM5"> Ford</brand>
+<model m_no="MSGT500">Model: Mustang Shell GT500</model>
+<exterior_color>Exterior Color: Red</exterior_color>
+<interior_color>Interior Color: Black</interior_color>
+<manufacture_year>Manufacture Year: 2013</manufacture_year>
+<mileage>Mileage: 24 MPG</mileage>
+<fuel_capacity>Fuel Capacity: 10.5 gallons</fuel_capacity>
+<Km>KM Covered: 20000</Km>
+<gears>Gears: 6</gears>
+<dimension>Dimension: 4730/1500/1150 mm</dimension>
+<car_type>Car Type: Fuel</car_type>
+<hp>Horsepower: 650 hp@6250 RPM</hp>
+<transmission>Transmission: Manual</transmission>
+<max_seating>Max Seating: 4</max_seating>
+<quantity>Quantity:<value>1</value></quantity>
+<price>Price: 70 Lakh</price>
+<warranty>Warranty: 2 years</warranty>
+<details>
+  <![CDATA[
+  The GT500 was developed by Ford’s SVT division, the same loon lab responsible for the Ford GT and F-150 SVT Raptor. Like a lot of SVT products, it seems dominated by its engine. The 5.8-liter, supercharged V-8 with 631 lb-ft underhood is a punched-out version of the aluminum-block 5.4 used in the 2011–12 GT500, which was itself essentially a wet-sump evolution of the V-8 used in the GT.
+  ]]>
+</details>
+</vehicle>
+
+<vehicle type="Crossover">
+<item_number id="C005">05</item_number>
+<img picture="Mercedes"/>
+<brand B_id="MG5">Mercedes-Benz</brand>
+<model m_no="Gla7">Model: Gla</model>
+<exterior_color>Exterior Color: White</exterior_color>
+<interior_color>Interior Color: Beige</interior_color>
+<manufacture_year>Manufacture Year: 2018</manufacture_year>
+<mileage>Mileage: 17.9 km/Litre</mileage>
+<fuel_capacity>Fuel Capacity:50 Litres</fuel_capacity>
+<Km>KM Covered: 56,000</Km>
+<gears>Gears: 7</gears>
+<dimension>Dimension: 4417/1804/1494 mm</dimension>
+<car_type>Car Type: Fuel</car_type>
+<hp>Horsepower: 136Ps@3400-4000 RPM</hp>
+<transmission>Transmission: Automatic</transmission>
+<packages>Packages: Leather interior furnishing</packages>
+<max_seating>Max Seating: 5</max_seating>
+<quantity>Quantity:<value>2</value></quantity>
+<price>Price: 25.6 Lakh</price>
+<warranty>Warranty: 5 years</warranty>
+<details>
+  <![CDATA[
+  This is a used Mercedes-Benz GLA 200 Sport 2018 Premium / Super Car model with Petrol variant.The specifications of the Premium / Super Car include engine displacement 1991 cc , fuel efficiency level 17.9 km/litre , fuel tank capacity of 50 litres, maximum power of 136Ps@3400-4000rpm , maximum torque of 300Nm@1600-3000rpm and transmission is Automatic.
+  ]]>
+  </details>
+</vehicle>
+
+<vehicle type="Coupe">
+<item_number id="C006">06</item_number>
+<img picture="BMW"/>
+<brand B_id="BMW2">BMW</brand>
+<model m_no="M240i">Model: 2 Series 3.0 M240i</model>
+<exterior_color>Exterior Color: Solid Alpine White</exterior_color>
+<interior_color>Interior Color: Black</interior_color>
+<manufacture_year>Manufacture Year: 2020</manufacture_year>
+<mileage>Mileage: 39.8 MPG</mileage>
+<fuel_capacity>Fuel Capacity: 52 Litres</fuel_capacity>
+<Km>KM Covered: 5000</Km>
+<gears>Gears: 5</gears>
+<dimension>Dimension: 4454/1984/1408 mm</dimension>
+<car_type>Car Type: Fuel</car_type>
+<hp>Horsepower: 335 bhp</hp>
+<transmission>Transmission: Automatic</transmission>
+<packages>Packages: Sun protection Glass</packages>
+<max_seating>Max Seating: 4</max_seating>
+<quantity>Quantity:<value>6</value></quantity>
+<price>Price: 60.5 Lakh</price>
+<warranty>Warranty: 5 years</warranty>
+<details>
+  <![CDATA[
+  The 2 Series Coupe looks and feels decidedly old-school, though for some buyers and long-time BMW fans that will be exactly the appeal, especially in its most potent M240i form. The lower-spec versions face a tougher challenge though, be that from trendy Minis or more up-to-date Audi TTs.
+  ]]>
+  </details>
+</vehicle>
+
+<vehicle type="Convertible">
+<item_number id="C007">07</item_number>
+<img picture="Audi"/>
+<brand B_id="AA3">Audi</brand>
+<model m_no="A3C40">Model: A3 Cabriolet </model>
+<exterior_color>Exterior Color: Red</exterior_color>
+<interior_color>Interior Color:Grey</interior_color>
+<manufacture_year>Manufacture Year: 2015</manufacture_year>
+<mileage>Mileage: 45 MPG</mileage>
+<fuel_capacity>Fuel Capacity: 50 Litres</fuel_capacity>
+<Km>KM Covered: 43,000</Km>
+<gears>Gears: 7</gears>
+<dimension>Dimension: 4421/1793/1409 mm</dimension>
+<car_type>Car Type: Fuel</car_type>
+<hp>Horsepower: 118Kw @ 6200 RPM</hp>
+<transmission>Transmission: Automatic</transmission>
+<max_seating>Max Seating: 4</max_seating>
+<quantity>Quantity:<value>1</value></quantity>
+<price>Price: 40.5 Lakh</price>
+<warranty>Warranty: 1 years</warranty>
+<details>
+  <![CDATA[
+  This is a used Audi A3 Cabriolet 40 TFSI 2015 Premium / Super Car model with Petrol variant.he specifications of the Premium / Super Car include , fuel tank capacity of 50 litres, maximum power of 118Kw@6200rpm , maximum torque of 250Nm @ 1500rpm and transmission is Automatic.
+  ]]>
+  </details>
+</vehicle>
+</body>
+<footer>
+<author>Designed by: Animesh Gautam</author>
+<patent>&#169;  2020 Second Hand Motors Pvt.Co</patent>
+<Location>Sorhakhuutya, Kathmandu Nepal </Location>
+<Phone_Number>Contact Number: 98415676544</Phone_Number>
+</footer>
+</shop>

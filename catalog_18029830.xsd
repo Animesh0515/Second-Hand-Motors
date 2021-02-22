@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--Creating schema for the 'shop' element in sequentical order which is of complex type-->
+  <xs:element name="shop">
+    <xs:complexType>
+      <xs:sequence>
+      <!--Referencing the child elements of 'shop'-->
+        <xs:element ref="head"/>
+        <xs:element ref="body"/>
+        <xs:element ref="footer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--Creating schema for the 'head' element in sequentical order which is of complex type-->
+  <xs:element name="head">
+    <xs:complexType>
+      <xs:sequence>
+      <!--Creating schema for the  child elements of 'head'-->
+        <xs:element name="logo"/>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="address" type="xs:string"/>
+        <xs:element name="telephone" type="xs:string"/>
+        <xs:element name="Website" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--Creating schema for the 'body' element in sequentical order which is of complex type-->
+  <xs:element name="body">
+    <xs:complexType>
+      <xs:sequence>
+      <!--Creating schema  for the  child elements of 'body' and also referencing them-->
+        <xs:element name="h2" type="xs:string"/>
+        <xs:element name="intro" type="xs:string"/>
+        <xs:element  ref="vehicle" minOccurs="0" maxOccurs="7"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--Creating schema  for the  child elements of 'body' in sequenctial order which is of complex type-->
+  <xs:element name="vehicle">
+    <xs:complexType>
+      <xs:sequence>
+      <!--Creating schema for the child elements of 'vehicle' and also referencing them-->
+        <xs:element ref="item_number"/>
+        <xs:element ref="img"/>
+        <xs:element ref="brand"/>
+        <xs:element ref="model"/>
+        <xs:element ref="exterior_color"/>
+        <xs:element name="interior_color" type="xs:string"/>
+        <xs:element name="manufacture_year" type="xs:string"/>
+        <!--minOcuurs and maxOcuurs means that the data has been repated and is optiional-->
+        <xs:element name="battery_capacity"  type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="mileage" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="fuel_capacity" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Km" type="xs:string"/>
+        <xs:element name="gears" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="dimension" type="xs:string"/>
+        <xs:element ref="car_type"/>
+        <xs:element name="hp" type="xs:string"/>
+        <xs:element name="transmission" type="xs:string"/>
+        <xs:element name="packages" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="max_seating" type="xs:string"/>
+        <xs:element ref="quantity" />
+        <xs:element ref="price"/>
+        <xs:element name="warranty" type="xs:string"/>
+        <xs:element name="details" type="xs:string"/>
+      </xs:sequence>
+      <!--Creating schema  for attribute of 'vehicle' which is of type string and is required in each vehicle element -->
+      <xs:attribute name="type" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!--Creating schema  for the  child elements of 'vehicle' which contains both compplex and simple type data-->
+  <xs:element name="item_number">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:integer">
+          <!--Creating schema  for attribute of 'item_number' which is of type string and is required in each vehicle element -->
+          <xs:attribute name="id"  type="xs:string" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <!--Creating schema  for the  child elements of 'vehicle'-->
+  <xs:element name="img">
+    <xs:complexType>
+        <!--Creating schema  for attribute of 'img' which is of type string and is required in each vehicle element -->
+      <xs:attribute name="picture" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!--Creating schema  for the  child elements of 'vehicle' which contains both compplex and simple type data-->
+  <xs:element name="brand">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+         <!--Creating schema  for attribute of 'brand' which is of type string and is required in each vehicle element -->
+          <xs:attribute name="B_id" type="xs:string" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <!--Creating schema  for the  child elements of 'vehicle' which contains mixed type of data-->
+  <xs:element name="model">
+    <xs:complexType mixed="true">
+      <!--Creating schema  for attribute of 'model' which is of type string and is required in each vehicle element -->
+      <xs:attribute name="m_no" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+   <!--Creating schema  for the  child elements of 'vehicle' which contains mixed type of data-->
+  <xs:element name="exterior_color">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="ul" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+   <!--Creating schema  for the  child elements of 'vehicle' which contains complex type of data-->
+  <xs:element name="ul">
+    <xs:complexType>
+      <xs:sequence>
+      <xs:element name="li" type="xs:string"  minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+   <!--Creating schema  for the  child elements of 'vehicle' which contains simple type of data-->
+  <xs:element name="car_type">
+    <xs:simpleType>
+    <!--Adding restriction to "car_type" element-->
+      <xs:restriction base="xs:string">
+    <!--Defining a pattern for restriction using regex-->
+        <xs:enumeration value="Car Type: Fuel"/>
+        <xs:enumeration value="Car Type: Hybrid"/>
+        <xs:enumeration value="Car Type: Electric"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+   <!--Creating schema  for the  child elements of 'vehicle' which contains mixed type of data-->
+  <xs:element name="quantity">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="value"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+   <!--Creating schema  for the  child elements of 'vehicle' which contains simple type of data-->
+  <xs:element name="value">
+    <xs:simpleType>
+    <!--Adding restriction to "value" element-->  
+      <xs:restriction base="xs:integer">
+    <!--Defining a pattern for restriction using regex-->
+        <xs:pattern value="[0-9]"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+   <!--Creating schema  for the  child elements of 'vehicle' which contains mixed type of data-->
+  <xs:element name="price">
+    <xs:complexType mixed="true">
+      <!--Creating schema  for attribute of 'price' which is of type string and is optional -->
+      <xs:attribute name="p_id" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <!--Creating schema for the 'footer' element in sequentical order which is of complex type-->
+  <xs:element name="footer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="author" type="xs:string"/>
+        <xs:element name="patent" type="xs:string"/>
+        <xs:element name="Location" type="xs:string"/>
+        <xs:element name="Phone_Number" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
